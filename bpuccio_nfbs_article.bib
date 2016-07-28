@@ -1,0 +1,425 @@
+@article{Craddock2013,
+abstract = {Multivariate supervised learning methods exhibit a remarkable ability to decode externally driven sensory, behavioral, and cognitive states from functional neuroimaging data. Although they are typically applied to task-based analyses, supervised learning methods are equally applicable to intrinsic effective and functional connectivity analyses. The obtained models of connectivity incorporate the multivariate interactions between all brain regions simultaneously, which will result in a more accurate representation of the connectome than the ones available with standard bivariate methods. Additionally the models can be applied to decode or predict the time series of intrinsic brain activity of a region from an independent dataset. The obtained prediction accuracy provides a measure of the integration between a brain region and other regions in its network, as well as a method for evaluating acquisition and preprocessing pipelines for resting state fMRI data. This article describes a method for learning multivariate models of connectivity. The method is applied in the non-parametric prediction accuracy, influence, and reproducibility-resampling (NPAIRS) framework, to study the regional variation of prediction accuracy and reproducibility (Strother et al., 2002). The resulting spatial distribution of these metrics is consistent with the functional hierarchy proposed by Mesulam (1998). Additionally we illustrate the utility of the multivariate regression connectivity modeling method for optimizing experimental parameters and assessing the quality of functional neuroimaging data. ?? 2013 Elsevier Inc.},
+author = {Craddock, R. Cameron and Milham, Michael P. and LaConte, Stephen M.},
+doi = {10.1016/j.neuroimage.2013.05.072},
+file = {:Users/bpuccio/Desktop/Nathan Kline/Craddock, Milham, Laconte - 2013 - Predicting intrinsic brain activity.pdf:pdf},
+isbn = {1095-9572 (Electronic)$\backslash$n1053-8119 (Linking)},
+issn = {10538119},
+journal = {NeuroImage},
+keywords = {Effective connectivity,FMRI,Functional connectivity,Functional magnetic resonance imaging,MVPA,Multi-voxel pattern analysis,Multivariate,Regression,Resting state},
+pages = {127--136},
+pmid = {23707580},
+publisher = {Elsevier Inc.},
+title = {{Predicting intrinsic brain activity}},
+url = {http://dx.doi.org/10.1016/j.neuroimage.2013.05.072},
+volume = {82},
+year = {2013}
+}
+@article{Eskildsen2012,
+abstract = {Brain extraction is an important step in the analysis of brain images. The variability in brain morphology and the difference in intensity characteristics due to imaging sequences make the development of a general purpose brain extraction algorithm challenging. To address this issue, we propose a new robust method (BEaST) dedicated to produce consistent and accurate brain extraction. This method is based on nonlocal segmentation embedded in a multi-resolution framework. A library of 80 priors is semi-automatically constructed from the NIH-sponsored MRI study of normal brain development, the International Consortium for Brain Mapping, and the Alzheimer's Disease Neuroimaging Initiative databases. In testing, a mean Dice similarity coefficient of 0.9834 ± 0.0053 was obtained when performing leave-one-out cross validation selecting only 20 priors from the library. Validation using the online Segmentation Validation Engine resulted in a top ranking position with a mean Dice coefficient of 0.9781 ± 0.0047. Robustness of BEaST is demonstrated on all baseline ADNI data, resulting in a very low failure rate. The segmentation accuracy of the method is better than two widely used publicly available methods and recent state-of-the-art hybrid approaches. BEaST provides results comparable to a recent label fusion approach, while being 40 times faster and requiring a much smaller library of priors. © 2011 Elsevier Inc.},
+author = {Eskildsen, Simon F. and Coup{\'{e}}, Pierrick and Fonov, Vladimir and Manj{\'{o}}n, Jos{\'{e}} V. and Leung, Kelvin K. and Guizard, Nicolas and Wassef, Shafik N. and {\O}stergaard, Lasse Riis and Collins, D. Louis},
+doi = {10.1016/j.neuroimage.2011.09.012},
+file = {:Users/bpuccio/Desktop/Nathan Kline/Eskildsen et al. (2012).pdf:pdf},
+isbn = {1095-9572 (Electronic)$\backslash$n1053-8119 (Linking)},
+issn = {10538119},
+journal = {NeuroImage},
+keywords = {BET,Brain extraction,MRI,Multi-resolution,Patch-based segmentation,Skull stripping},
+number = {3},
+pages = {2362--2373},
+pmid = {21945694},
+title = {{BEaST: Brain extraction based on nonlocal segmentation technique}},
+volume = {59},
+year = {2012}
+}
+@article{Iglesias2011,
+abstract = {Automatic whole-brain extraction from magnetic resonance images (MRI), also known as skull stripping, is a key component in most neuroimage pipelines. As the first element in the chain, its robustness is critical for the overall performance of the system. Many skull stripping methods have been proposed, but the problem is not considered to be completely solved yet. Many systems in the literature have good performance on certain datasets (mostly the datasets they were trained/tuned on), but fail to produce satisfactory results when the acquisition conditions or study populations are different. In this paper we introduce a robust, learning-based brain extraction system (ROBEX). The method combines a discriminative and a generative model to achieve the final result. The discriminative model is a Random Forest classifier trained to detect the brain boundary; the generative model is a point distribution model that ensures that the result is plausible. When a new image is presented to the system, the generative model is explored to find the contour with highest likelihood according to the discriminative model. Because the target shape is in general not perfectly represented by the generative model, the contour is refined using graph cuts to obtain the final segmentation. Both models were trained using 92 scans from a proprietary dataset but they achieve a high degree of robustness on a variety of other datasets. ROBEX was compared with six other popular, publicly available methods (BET, BSE, FreeSurfer, AFNI, BridgeBurner, and GCUT) on three publicly available datasets (IBSR, LPBA40, and OASIS, 137 scans in total) that include a wide range of acquisition hardware and a highly variable population (different age groups, healthy/diseased). The results show that ROBEX provides significantly improved performance measures for almost every method/dataset combination.},
+author = {Iglesias, Juan Eugenio and Liu, Cheng Yi and Thompson, Paul M. and Tu, Zhuowen},
+doi = {10.1109/TMI.2011.2138152},
+file = {:Users/bpuccio/Desktop/Nathan Kline/Iglesias et al (2011).pdf:pdf},
+isbn = {0278-0062},
+issn = {02780062},
+journal = {IEEE Transactions on Medical Imaging},
+keywords = {Comparison,minimum s-t cut,point distribution models,random forests,skull stripping},
+number = {9},
+pages = {1617--1634},
+pmid = {21880566},
+title = {{Robust brain extraction across datasets and comparison with publicly available methods}},
+volume = {30},
+year = {2011}
+}
+@article{Leung2010,
+abstract = {Volume and change in volume of the hippocampus are both important markers of Alzheimer's disease (AD). Delineation of the structure on MRI is time-consuming and therefore reliable automated methods are required. We describe an improvement (multiple-atlas propagation and segmentation (MAPS)) to our template library-based segmentation technique. The improved technique uses non-linear registration of the best-matched templates from our manually segmented library to generate multiple segmentations and combines them using the simultaneous truth and performance level estimation (STAPLE) algorithm. Change in volume over 12months (MAPS-HBSI) was measured by applying the boundary shift integral using MAPS regions. Methods were developed and validated against manual measures using subsets from Alzheimer's Disease Neuroimaging Initiative (ADNI). The best method was applied to 682 ADNI subjects, at baseline and 12-month follow-up, enabling assessment of volumes and atrophy rates in control, mild cognitive impairment (MCI) and AD groups, and within MCI subgroups classified by subsequent clinical outcome. We compared our measures with those generated by Surgical Navigation Technologies (SNT) available from ADNI. The accuracy of our volumes was one of the highest reported (mean(SD) Jaccard Index 0.80(0.04) (N=30)). Both MAPS baseline volume and MAPS-HBSI atrophy rate distinguished between control, MCI and AD groups. Comparing MCI subgroups (reverters, stable and converters): volumes were lower and rates higher in converters compared with stable and reverter groups (p< or =0.03). MAPS-HBSI required the lowest sample sizes (78 subjects) for a hypothetical trial. In conclusion, the MAPS and MAPS-HBSI methods give accurate and reliable volumes and atrophy rates across the clinical spectrum from healthy aging to AD.},
+author = {Leung, KK Kelvin K and Barnes, Josephine and Ridgway, Gr Gerard R Gr and Bartlett, Jonathan W and Clarkson, Mj Matthew J and Macdonald, Kate and Schuff, Norbert and Fox, Nc Nick C Nc and Ourselin, Sebastien and Barlett, Jw},
+doi = {10.1016/j.neuroimage.2010.03.018.Automated},
+file = {:Users/bpuccio/Desktop/Nathan Kline/Leung et al (2010).pdf:pdf},
+issn = {1095-9572},
+journal = {Neuroimage},
+keywords = {Algorithms,Alzheimer Disease,Alzheimer Disease: pathology,Anatomy,Automation,Cognition Disorders,Cognition Disorders: pathology,Computer-Assisted,Cross-Sectional,Data Interpretation,Disease Progression,Female,Functional Laterality,Functional Laterality: physiology,Hippocampus,Hippocampus: pathology,Humans,Image Processing,Magnetic Resonance Imaging,Male,Middle Aged,Neuropsychological Tests,Reproducibility of Results,Sample Size,Statistical},
+number = {4},
+pages = {1345--1359},
+pmid = {20230901},
+title = {{Automated cross-sectional and longitudinal hippocampal volume measurement in mild cognitive impairment and Alzheimer's disease}},
+url = {/citations?view{\_}op=view{\_}citation{\&}continue=/scholar{\%}3Fhl{\%}3Den{\%}26start{\%}3D10{\%}26as{\_}sdt{\%}3D0,26{\%}26scilib{\%}3D1{\&}citilm=1{\&}citation{\_}for{\_}view=-8N{\_}dQUAAAAJ:4uoR24qA-WYC{\&}hl=en{\&}oi=p$\backslash$nhttp://www.sciencedirect.com/science/article/pii/S1053811910002880$\backslash$nhttp://www.pubmedce},
+volume = {51},
+year = {2010}
+}
+@article{Lutkenhoff2014,
+abstract = {The study of structural and functional magnetic resonance imaging data has greatly benefitted from the development of sophisticated and efficient algorithms aimed at automating and optimizing the analysis of brain data. We address, in the context of the segmentation of brain from non-brain tissue (i.e., brain extraction, also known as skull-stripping), the tension between the increased theoretical and clinical interest in patient data, and the difficulty of conventional algorithms to function optimally in the presence of gross brain pathology. Indeed, because of the reliance of many algorithms on priors derived from healthy volunteers, images with gross pathology can severely affect their ability to correctly trace the boundaries between brain and non-brain tissue, potentially biasing subsequent analysis. We describe and make available an optimized brain extraction script for the pathological brain (optiBET) robust to the presence of pathology. Rather than attempting to trace the boundary between tissues, optiBET performs brain extraction by (i) calculating an initial approximate brain extraction; (ii) employing linear and non-linear registration to project the approximate extraction into the MNI template space; (iii) back-projecting a standard brain-only mask from template space to the subject's original space; and (iv) employing the back-projected brain-only mask to mask-out non-brain tissue. The script results in up to 94{\%} improvement of the quality of extractions over those obtained with conventional software across a large set of severely pathological brains. Since optiBET makes use of freely available algorithms included in FSL, it should be readily employable by anyone having access to such tools.},
+author = {Lutkenhoff, Evan S. and Rosenberg, Matthew and Chiang, Jeffrey and Zhang, Kunyu and Pickard, John D. and Owen, Adrian M. and Monti, Martin M.},
+doi = {10.1371/journal.pone.0115551},
+file = {:Users/bpuccio/Desktop/Nathan Kline/journal.pone.0115551.PDF:PDF},
+issn = {19326203},
+journal = {PLoS ONE},
+number = {12},
+pages = {1--13},
+pmid = {25514672},
+title = {{Optimized brain extraction for pathological brains (optiBET)}},
+volume = {9},
+year = {2014}
+}
+@article{Prasad2014,
+abstract = {Background: Segmentation methods for medical images may not generalize well to new data sets or new tasks, hampering their utility. We attempt to remedy these issues using deformable organisms to create an easily customizable segmentation plan. We validate our framework by creating a plan to locate the brain in 3D magnetic resonance images of the head (skull-stripping). New method: Our method borrows ideas from artificial life to govern a set of deformable models. We use control processes such as sensing, proactive planning, reactive behavior, and knowledge representation to segment an image. The image may have landmarks and features specific to that dataset; these may be easily incorporated into the plan. In addition, we use a machine learning method to make our segmentation more accurate. Results: Our method had the least Hausdorff distance error, but included slightly less brain voxels (false negatives). It also had the lowest false positive error and performed on par to skull-stripping specific method on other metrics. Comparison with existing method(s): We tested our method on 838 T1-weighted images, evaluating results using distance and overlap error metrics based on expert gold standard segmentations. We evaluated the results before and after the learning step to quantify its benefit; we also compare our results to three other widely used methods: BSE, BET, and the Hybrid Watershed algorithm. Conclusions: Our framework captures diverse categories of information needed for brain segmentation and will provide a foundation for tackling a wealth of segmentation problems.},
+author = {Prasad, Gautam and Joshi, Anand A. and Feng, Albert and Toga, Arthur W. and Thompson, Paul M. and Terzopoulos, Demetri},
+doi = {10.1016/j.jneumeth.2014.07.023},
+file = {:Users/bpuccio/Desktop/Nathan Kline/Prasad et al (2011).pdf:pdf},
+isbn = {9781424441280},
+issn = {1872678X},
+journal = {Journal of Neuroscience Methods},
+keywords = {Adaboost,Deformable organisms,Hausdorff,MRI,Overlap,Registration,Skull-stripping},
+pages = {114--124},
+pmid = {25124851},
+title = {{Skull-stripping with machine learning deformable organisms}},
+volume = {236},
+year = {2014}
+}
+@article{Sadananthan2010,
+abstract = {Removal of non-brain tissues, particularly dura, is an important step in enabling accurate measurement of brain structures. Many popular methods rely on iterative surface deformation to fit the brain boundary and tend to leave residual dura. Similar to other approaches, the method proposed here uses intensity thresholding followed by removal of narrow connections to obtain a brain mask. However, instead of using morphological operations to remove narrow connections, a graph theoretic image segmentation technique was used to position cuts that isolate and remove dura. This approach performed well on both the standardized IBSR test data sets and empirically derived data. Compared to the Hybrid Watershed Algorithm (HWA; (Segonne et al., 2004)) the novel approach achieved an additional 10-30{\%} of dura removal without incurring further brain tissue erosion. The proposed method is best used in conjunction with HWA as the errors produced by the two approaches often occur at different locations and cancel out when their masks are combined. Our experiments indicate that this combination can substantially decrease and often fully avoid cortical surface overestimation in subsequent segmentation. ?? 2009 Elsevier Inc. All rights reserved.},
+author = {Sadananthan, Suresh A. and Zheng, Weili and Chee, Michael W L and Zagorodnov, Vitali},
+doi = {10.1016/j.neuroimage.2009.08.050},
+file = {:Users/bpuccio/Desktop/Nathan Kline/Sadananthan et al (2010).pdf:pdf},
+issn = {10538119},
+journal = {NeuroImage},
+keywords = {Brain morphometry,Graph cuts,MRI,Segmentation,Skull stripping},
+number = {1},
+pages = {225--239},
+pmid = {19732839},
+publisher = {Elsevier Inc.},
+title = {{Skull stripping using graph cuts}},
+url = {http://dx.doi.org/10.1016/j.neuroimage.2009.08.050},
+volume = {49},
+year = {2010}
+}
+@article{Segonne2004,
+abstract = {We present a novel skull-stripping algorithm based on a hybrid approach that combines watershed algorithms and deformable surface models. Our method takes advantage of the robustness of the former as well as the surface information available to the latter. The algorithm first localizes a single white matter voxel in a T1-weighted MRI image, and uses it to create a global minimum in the white matter before applying a watershed algorithm with a preflooding height. The watershed algorithm builds an initial estimate of the brain volume based on the three-dimensional connectivity of the white matter. This first step is robust, and performs well in the presence of intensity nonuniformities and noise, but may erode parts of the cortex that abut bright nonbrain structures such as the eye sockets, or may remove parts of the cerebellum. To correct these inaccuracies, a surface deformation process fits a smooth surface to the masked volume, allowing the incorporation of geometric constraints into the skull-stripping procedure. A statistical atlas, generated from a set of accurately segmented brains, is used to validate and potentially correct the segmentation, and the MRI intensity values are locally re-estimated at the boundary of the brain. Finally, a high-resolution surface deformation is performed that accurately matches the outer boundary of the brain, resulting in a robust and automated procedure. Studies by our group and others outperform other publicly available skull-stripping tools. © 2004 Elsevier Inc. All rights reserved.},
+author = {S{\'{e}}gonne, F. and Dale, A. M. and Busa, E. and Glessner, M. and Salat, D. and Hahn, H. K. and Fischl, B.},
+doi = {10.1016/j.neuroimage.2004.03.032},
+file = {:Users/bpuccio/Desktop/Nathan Kline/Segonne et al (2004).pdf:pdf},
+isbn = {1053-8119 (Print)$\backslash$r1053-8119 (Linking)},
+issn = {10538119},
+journal = {NeuroImage},
+keywords = {Atlas-based segmentation,Brain segmentation,Skull stripping,Template deformation,Watershed transformation},
+number = {3},
+pages = {1060--1075},
+pmid = {15219578},
+title = {{A hybrid approach to the skull stripping problem in MRI}},
+volume = {22},
+year = {2004}
+}
+@article{Shattuck2009,
+abstract = {One key issue that must be addressed during the development of image segmentation algorithms is the accuracy of the results they produce. Algorithm developers require this so they can see where methods need to be improved and see how new developments compare with existing ones. Users of algorithms also need to understand the characteristics of algorithms when they select and apply them to their neuroimaging analysis applications. Many metrics have been proposed to characterize error and success rates in segmentation, and several datasets have also been made public for evaluation. Still, the methodologies used in analyzing and reporting these results vary from study to study, so even when studies use the same metrics their numerical results may not necessarily be directly comparable. To address this problem, we developed a web-based resource for evaluating the performance of skull-stripping in T1-weighted MRI. The resource provides both the data to be segmented and an online application that performs a validation study on the data. Users may download the test dataset, segment it using whichever method they wish to assess, and upload their segmentation results to the server. The server computes a series of metrics, displays a detailed report of the validation results, and archives these for future browsing and analysis. We applied this framework to the evaluation of 3 popular skull-stripping algorithms - the Brain Extraction Tool [Smith, S.M., 2002. Fast robust automated brain extraction. Hum. Brain Mapp. 17 (3),143-155 (Nov)], the Hybrid Watershed Algorithm [S??gonne, F., Dale, A.M., Busa, E., Glessner, M., Salat, D., Hahn, H.K., Fischl, B., 2004. A hybrid approach to the skull stripping problem in MRI. NeuroImage 22 (3), 1060-1075 (Jul)], and the Brain Surface Extractor [Shattuck, D.W., Sandor-Leahy, S.R., Schaper, K.A., Rottenberg, D.A., Leahy, R.M., 2001. Magnetic resonance image tissue classification using a partial volume model. NeuroImage 13 (5), 856-876 (May) under several different program settings. Our results show that with proper parameter selection, all 3 algorithms can achieve satisfactory skull-stripping on the test data. ?? 2008 Elsevier Inc. All rights reserved.},
+archivePrefix = {arXiv},
+arxivId = {NIHMS150003},
+author = {Shattuck, David W. and Prasad, Gautam and Mirza, Mubeena and Narr, Katherine L. and Toga, Arthur W.},
+doi = {10.1016/j.neuroimage.2008.10.066},
+eprint = {NIHMS150003},
+file = {:Users/bpuccio/Desktop/Nathan Kline/Shattuck et al (2009).pdf:pdf},
+isbn = {1053-8119},
+issn = {10538119},
+journal = {NeuroImage},
+keywords = {MRI,Segmentation,Skull-stripping,Validation},
+number = {2},
+pages = {431--439},
+pmid = {19073267},
+publisher = {Elsevier Inc.},
+title = {{Online resource for validation of brain segmentation methods}},
+url = {http://dx.doi.org/10.1016/j.neuroimage.2008.10.066},
+volume = {45},
+year = {2009}
+}
+@article{Smith2002,
+abstract = {An automated method for segmenting magnetic resonance head images into brain and non-brain has been developed. It is very robust and accurate and has been tested on thousands of data sets from a wide variety of scanners and taken with a wide variety of MR sequences. The method, Brain Extraction Tool (BET), uses a deformable model that evolves to fit the brain's surface by the application of a set of locally adaptive model forces. The method is very fast and requires no preregistration or other pre-processing before being applied. We describe the new method and give examples of results and the results of extensive quantitative testing against "gold-standard" hand segmentations, and two other popular automated methods.},
+author = {Smith, Stephen M.},
+doi = {10.1002/hbm.10062},
+file = {:Users/bpuccio/Desktop/Nathan Kline/Smith-2002-Human{\_}Brain{\_}Mapping.pdf:pdf},
+isbn = {1065-9471 (Print) 1065-9471 (Linking)},
+issn = {10659471},
+journal = {Human Brain Mapping},
+keywords = {Brain segmentation,Cortical surface modeling},
+number = {3},
+pages = {143--155},
+pmid = {12391568},
+title = {{Fast robust automated brain extraction}},
+volume = {17},
+year = {2002}
+}
+@article{Wang2014,
+abstract = {Accurate and robust brain extraction is a critical step in most neuroimaging analysis pipelines. In particular, for the large-scale multi-site neuroimaging studies involving a significant number of subjects with diverse age and diagnostic groups, accurate and robust extraction of the brain automatically and consistently is highly desirable. In this paper, we introduce population-specific probability maps to guide the brain extraction of diverse subject groups, including both healthy and diseased adult human populations, both developing and aging human populations, as well as non-human primates. Specifically, the proposed method combines an atlas-based approach, for coarse skull-stripping, with a deformable-surface-based approach that is guided by local intensity information and population-specific prior information learned from a set of real brain images for more localized refinement. Comprehensive quantitative evaluations were performed on the diverse large-scale populations of ADNI dataset with over 800 subjects (55 ∼ 90 years of age, multi-site, various diagnosis groups), OASIS dataset with over 400 subjects (18 ∼ 96 years of age, wide age range, various diagnosis groups), and NIH pediatrics dataset with 150 subjects (5 ∼ 18 years of age, multi-site, wide age range as a complementary age group to the adult dataset). The results demonstrate that our method consistently yields the best overall results across almost the entire human life span, with only a single set of parameters. To demonstrate its capability to work on non-human primates, the proposed method is further evaluated using a rhesus macaque dataset with 20 subjects. Quantitative comparisons with popularly used state-of-the-art methods, including BET, Two-pass BET, BET-B, BSE, HWA, ROBEX and AFNI, demonstrate that the proposed method performs favorably with superior performance on all testing datasets, indicating its robustness and effectiveness.},
+author = {Wang, Yaping and Nie, Jingxin and Yap, Pew Thian and Li, Gang and Shi, Feng and Geng, Xiujuan and Guo, Lei and Shen, Dinggang},
+doi = {10.1371/journal.pone.0077810},
+file = {:Users/bpuccio/Desktop/Nathan Kline/Wang et al (2014).PDF:PDF},
+isbn = {10.1371/journal.pone.0077810},
+issn = {19326203},
+journal = {PLoS ONE},
+number = {1},
+pages = {1--23},
+pmid = {24489639},
+title = {{Knowledge-guided robust MRI brain extraction for diverse large-scale neuroimaging studies on humans and non-human primates}},
+volume = {9},
+year = {2014}
+}
+@webpage{NiBabel,
+title  = {NiBabel},
+url = {http://nipy.org/nibabel/}
+}
+@article{IBSR,
+  title={Image similarity and tissue overlaps as surrogates for image registration accuracy: widely used but unreliable},
+  author={Rohlfing, Torsten},
+  journal={IEEE transactions on medical imaging},
+  volume={31},
+  number={2},
+  pages={153--163},
+  year={2012},
+  publisher={IEEE}
+}
+@webpage{Rockland,
+title  = {The Enhanced Nathan Kline Institute - Rockland Sample},
+url = {http://fcon_1000.projects.nitrc.org/indi/enhanced/}
+}
+@Article{Matplotlib,
+  Author    = {Hunter, J. D.},
+  Title     = {Matplotlib: A 2D graphics environment},
+  Journal   = {Computing In Science \& Engineering},
+  Volume    = {9},
+  Number    = {3},
+  Pages     = {90--95},
+  abstract  = {Matplotlib is a 2D graphics package used for Python
+  for application development, interactive scripting, and
+  publication-quality image generation across user
+  interfaces and operating systems.},
+  publisher = {IEEE COMPUTER SOC},
+  year      = 2007
+}
+@webpage{Github,
+title  = {NFB\_skullstripped Github Page},
+url = {https://github.com/preprocessed-connectomes-project/NFB_skullstripped},
+year = {2016}
+}
+@article{afni,
+  title={AFNI: software for analysis and visualization of functional magnetic resonance neuroimages},
+  author={Cox, Robert W},
+  journal={Computers and Biomedical research},
+  volume={29},
+  number={3},
+  pages={162--173},
+  year={1996},
+  publisher={Elsevier}
+}
+@webpage{Brainwash,
+title  = {Automatic Registration Toolbox},
+url = {http://www.nitrc.org/projects/art/}
+}
+@article{ardekani1995fully,
+  title={A fully automatic multimodality image registration algorithm.},
+  author={Ardekani, Babak A and Braun, Michael and Hutton, Brian F and Kanno, Iwao and Iida, Hidehiro},
+  journal={Journal of computer assisted tomography},
+  volume={19},
+  number={4},
+  pages={615--623},
+  year={1995},
+  publisher={LWW}
+}
+@article{lpba40,
+  title={Construction of a 3D probabilistic atlas of human cortical structures},
+  author={Shattuck, David W and Mirza, Mubeena and Adisetiyo, Vitria and Hojatkashani, Cornelius and Salamon, Georges and Narr, Katherine L and Poldrack, Russell A and Bilder, Robert M and Toga, Arthur W},
+  journal={Neuroimage},
+  volume={39},
+  number={3},
+  pages={1064--1080},
+  year={2008},
+  publisher={Elsevier}
+}
+@article{Nooner,
+  title={The NKI-Rockland sample: a model for accelerating the pace of discovery science in psychiatry},
+  author={Nooner, Kate Brody and Colcombe, Stanley and Tobe, Russell and Mennes, Maarten and Benedict, Melissa and Moreno, Alexis and Panek, Laura and Brown, Shaquanna and Zavitz, Stephen and Li, Qingyang and others},
+  journal={Frontiers in neuroscience},
+  volume={6},
+  pages={152},
+  year={2012},
+  publisher={Frontiers}
+}
+@article {Nichols054262,
+	author = {Nichols, Thomas E. and Das, Samir and Eickhoff, Simon B. and Evans, Alan C. and Glatard, Tristan and Hanke, Michael and Kriegeskorte, Nikolaus and Milham, Michael P. and Poldrack, Russell A. and Poline, Jean-Baptiste and Proal, Erika and Thirion, Bertrand and Van Essen, David C. and White, Tonya and Yeo, B. T. Thomas},
+	title = {Best Practices in Data Analysis and Sharing in Neuroimaging using MRI},
+	year = {2016},
+	doi = {10.1101/054262},
+	publisher = {Cold Spring Harbor Labs Journals},
+	abstract = {Neuroimaging enables rich noninvasive measurements of human brain activity, but translating such data into neuroscientific insights and clinical applications requires complex analyses and collaboration among a diverse array of researchers. The open science movement is reshaping scientific culture and addressing the challenges of transparency and reproducibility of research. To advance open science in neuroimaging the Organization for Human Brain Mapping created the Committee on Best Practice in Data Analysis and Sharing (COBIDAS), charged with creating a report that collects best practice recommendations from experts and the entire brain imaging community. The purpose of this work is to elaborate the principles of open and reproducible research for neuroimaging using Magnetic Resonance Imaging (MRI), and then distill these principles to specific research practices. Many elements of a study are so varied that practice cannot be prescribed, but for these areas we detail the information that must be reported to fully understand and potentially replicate a study. For other elements of a study, like statistical modelling where specific poor practices can be identified, and the emerging areas of data sharing and reproducibility, we detail both good practice and reporting standards. For each of seven areas of a study we provide tabular listing of over 100 items to help plan, execute, report and share research in the most transparent fashion. Whether for individual scientists, or for editors and reviewers, we hope these guidelines serve as a benchmark, to raise the standards of practice and reporting in neuroimaging using MRI.},
+	URL = {http://biorxiv.org/content/early/2016/07/10/054262},
+	eprint = {http://biorxiv.org/content/early/2016/07/10/054262.full.pdf},
+	journal = {bioRxiv}
+}
+% 21195780 
+@Article{pmid21195780,
+   Author="Leung, K. K.  and Barnes, J.  and Modat, M.  and Ridgway, G. R.  and Bartlett, J. W.  and Fox, N. C.  and Ourselin, S. ",
+   Title="{{B}rain {M}{A}{P}{S}: an automated, accurate and robust brain extraction technique using a template library}",
+   Journal="Neuroimage",
+   Year="2011",
+   Volume="55",
+   Number="3",
+   Pages="1091--1108",
+   Month="Apr"
+}
+% 17476317 
+@Article{pmid17476317,
+   Author="Mueller, S. G.  and Weiner, M. W.  and Thal, L. J.  and Petersen, R. C.  and Jack, C. R.  and Jagust, W.  and Trojanowski, J. Q.  and Toga, A. W.  and Beckett, L. ",
+   Title="{{W}ays toward an early diagnosis in {A}lzheimer's disease: the {A}lzheimer's {D}isease {N}euroimaging {I}nitiative ({A}{D}{N}{I})}",
+   Journal="Alzheimers Dement",
+   Year="2005",
+   Volume="1",
+   Number="1",
+   Pages="55--66",
+   Month="Jul"
+}
+@webpage{Seaborn,
+title  = {Seaborn: statistical data visualization},
+url = {https://github.com/mwaskom/seaborn/}
+}
+@article{MASS,
+  title={Multi-atlas skull-stripping},
+  author={Doshi, Jimit and Erus, Guray and Ou, Yangming and Gaonkar, Bilwaj and Davatzikos, Christos},
+  journal={Academic radiology},
+  volume={20},
+  number={12},
+  pages={1566--1576},
+  year={2013},
+  publisher={Elsevier}
+}
+@article{bse,
+  title={Magnetic resonance image tissue classification using a partial volume model},
+  author={Shattuck, David W and Sandor-Leahy, Stephanie R and Schaper, Kirt A and Rottenberg, David A and Leahy, Richard M},
+  journal={NeuroImage},
+  volume={13},
+  number={5},
+  pages={856--876},
+  year={2001},
+  publisher={Elsevier}
+}
+@techreport{skid,
+  title={Structured clinical interview for DSM-IV-TR axis I disorders, research version, non-patient edition},
+  author={First, Michael B and Spitzer, Robert L and Gibbon, Miriam and Williams, Janet BW},
+  year={2002},
+  institution={SCID-I/NP). New York: New York State Psychiatric Institute Biometrics Research}
+}
+@article{oasis,
+  title={Open Access Series of Imaging Studies (OASIS): cross-sectional MRI data in young, middle aged, nondemented, and demented older adults},
+  author={Marcus, Daniel S and Wang, Tracy H and Parker, Jamie and Csernansky, John G and Morris, John C and Buckner, Randy L},
+  journal={Journal of cognitive neuroscience},
+  volume={19},
+  number={9},
+  pages={1498--1507},
+  year={2007},
+  publisher={MIT Press}
+}
+@webpage{rpubs,
+	title  = {A Brief introduction to BEaST},
+	url = {https://rpubs.com/conge/beast_intro}
+}
+@article{brainweb,
+  title={Twenty new digital brain phantoms for creation of validation image data bases},
+  author={Aubert-Broche, Berengere and Griffin, Mark and Pike, G Bruce and Evans, Alan C and Collins, D Louis},
+  journal={IEEE transactions on medical imaging},
+  volume={25},
+  number={11},
+  pages={1410--1416},
+  year={2006},
+  publisher={IEEE}
+}
+@webpage{freesurfer,
+	title  = {FreeSurfer Software Suite},
+	url = {https://surfer.nmr.mgh.harvard.edu/}
+}
+
+@misc{nki_mrproto,
+  title = {Nathan Kline Institute - Rockland Sample MRI Protocol},
+  howpublished = {\url{http://fcon_1000.projects.nitrc.org/indi/enhanced/mri_protocol.html}},
+  note = {Accessed: 2016-07-27}
+}
+
+@article{Dice1945,
+ ISSN = {00129658, 19399170},
+ URL = {http://www.jstor.org/stable/1932409},
+ author = {Lee R. Dice},
+ journal = {Ecology},
+ number = {3},
+ pages = {297-302},
+ publisher = {Ecological Society of America},
+ title = {Measures of the Amount of Ecologic Association Between Species},
+ volume = {26},
+ year = {1945}
+}
+
+@Manual{R,
+  title = {R: A Language and Environment for Statistical Computing},
+  author = {{R Development Core Team}},
+  organization = {R Foundation for Statistical Computing},
+  address = {Vienna, Austria},
+  year = {2008},
+  note = {{ISBN} 3-900051-07-0},
+  url = {http://www.R-project.org},
+}
+
+@Book{ggplot,
+  author = {Hadley Wickham},
+  title = {ggplot2: Elegant Graphics for Data Analysis},
+  publisher = {Springer-Verlag New York},
+  year = {2009},
+  isbn = {978-0-387-98140-6},
+  url = {http://ggplot2.org},
+}
+
+@article{gabrieli2015prediction,
+  title={Prediction as a humanitarian and pragmatic contribution from human cognitive neuroscience},
+  author={Gabrieli, John DE and Ghosh, Satrajit S and Whitfield-Gabrieli, Susan},
+  journal={Neuron},
+  volume={85},
+  number={1},
+  pages={11--26},
+  year={2015},
+  publisher={Elsevier}
+}
+
+@Article{Mugler1990,
+   Author="Mugler, J. P.  and Brookeman, J. R. ",
+   Title="{{T}hree-dimensional magnetization-prepared rapid gradient-echo imaging (3{D} {M}{P} {R}{A}{G}{E})}",
+   Journal="Magn Reson Med",
+   Year="1990",
+   Volume="15",
+   Number="1",
+   Pages="152--157",
+   Month="Jul",
+   Abstract={A new three-dimensional imaging technique which is applicable for 3D MR imaging throughout the body is introduced. In our preliminary investigations we have acquired high-quality 3D image sets of the abdomen showing minimal respiratory artifacts in just over 7 min (voxel size 2.7 X 2.7 X 2.7 mm3), and 3D image sets of the head showing excellent gray/white contrast in less than 6 min (voxel size 1.0 X 2.0 X 1.4 mm3).},
+   Note={[PubMed:\href{http://www.ncbi.nlm.nih.gov/pubmed/2374495}{2374495}] }
+}
+
+@Article{Griswold2002,
+   Author="Griswold, M. A.  and Jakob, P. M.  and Heidemann, R. M.  and Nittka, M.  and Jellus, V.  and Wang, J.  and Kiefer, B.  and Haase, A. ",
+   Title="{{G}eneralized autocalibrating partially parallel acquisitions ({G}{R}{A}{P}{P}{A})}",
+   Journal="Magn Reson Med",
+   Year="2002",
+   Volume="47",
+   Number="6",
+   Pages="1202--1210",
+   Month="Jun",
+   Abstract={In this study, a novel partially parallel acquisition (PPA) method is presented which can be used to accelerate image acquisition using an RF coil array for spatial encoding. This technique, GeneRalized Autocalibrating Partially Parallel Acquisitions (GRAPPA) is an extension of both the PILS and VD-AUTO-SMASH reconstruction techniques. As in those previous methods, a detailed, highly accurate RF field map is not needed prior to reconstruction in GRAPPA. This information is obtained from several k-space lines which are acquired in addition to the normal image acquisition. As in PILS, the GRAPPA reconstruction algorithm provides unaliased images from each component coil prior to image combination. This results in even higher SNR and better image quality since the steps of image reconstruction and image combination are performed in separate steps. After introducing the GRAPPA technique, primary focus is given to issues related to the practical implementation of GRAPPA, including the reconstruction algorithm as well as analysis of SNR in the resulting images. Finally, in vivo GRAPPA images are shown which demonstrate the utility of the technique.},
+   Note={[DOI:\href{http://dx.doi.org/10.1002/mrm.10171}{10.1002/mrm.10171}] [PubMed:\href{http://www.ncbi.nlm.nih.gov/pubmed/12111967}{12111967}] }
+}
