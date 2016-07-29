@@ -1,0 +1,9 @@
+\parttitle{Background}
+Skull-stripping is the procedure of removing non-brain tissue from anatomical MRI data. This procedure is necessary for calculating brain volume and for improving the quality of other image processing steps. Developing new skull-stripping algorithms and evaluating their performance requires \emph{gold standard} data from a variety of different scanners and acquisition methods. We complement existing repositories with manually-corrected brain masks for 125 T1-weighted anatomical scans from the Nathan Kline Institute Enhanced Rockland Sample Neurofeedback Study.
+
+\parttitle{Findings}
+Skull-stripped images were obtained using a semi-automated procedure that involved skull-stripping the data using the brain extraction based on non local segmentation technique (BEaST) software and manually correcting the worst results. Corrected brain masks were added into the BEaST library and the procedure was reiterated until acceptable brain masks were available for all images. In total, 85 of the skull-stripped images were hand-edited and 40 were deemed to not need editing. The results are brain masks for the 125 images along with a BEaST library for automatically skull-stripping other data.
+
+
+\parttitle{Conclusion}
+Skull-stripped anatomical images from the Neurofeedback sample are available for download from the Preprocessed Connectomes Project. The resulting brain masks can be used by researchers to improve their preprocessing of the Neurofeedback data, and as training and testing data for developing new skull-stripping algorithms and evaluating the impact on other aspects of MRI preprocessing. We have illustrated the utility of these data as a reference for comparing various automatic methods and evaluated the performance of the newly created library on independent data.
