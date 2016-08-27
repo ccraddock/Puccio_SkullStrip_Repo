@@ -1,0 +1,31 @@
+\documentclass{article}
+
+\usepackage{lipsum}
+% \usepackage{layout}
+
+\newcommand{\ts}{\textsuperscript}
+%\usepackage{fontspec}
+%\setmainfont{Calibri}
+\providecommand\CMItoname{}
+\providecommand\CMItoaddress{}
+\providecommand\CMItoopeningname{Editor}
+\providecommand\CMIreline{Data note resubmission to GigaScience Brainhack Thematic Series}
+\input{NKIletterdefs}
+
+\begin{document}
+\sffamily
+
+I am pleased to resubmit for publication the revised version of GIGA-D-16-00066 ''The Preprocessed Connectomes Project Repository of Manually Corrected Skull-stripped T1-weighted Anatomical MRI Data.''  We thank the reviewers for their comments on the manuscript, and address their specific concerns below.
+
+Reviewer \#1 expresses concern that 66 out of the 125 individuals have psychiatric and other mental health diagnoses and states that ``[t]his does not seem to be a sample of the general population.'' The NFB dataset was designed to evaluate DMN regulation across a variety of clinical and subclincal psychiatric symptoms. As such, we employed minimal exclusion criteria to ensure adequate variance in these various domains to make this evaluation possible. We believe that including a broad spectrum of disorders makes the data more representative of the general population than the ``super control'' used in most neuroimaging experiments. Indeed, the relative prevalence of the various diagnoses in our dataset are not inconsistent with the prevalence of these diagnoses in the population as a whole. To address the reviewers concerns, we have updated the text to clarify the rationale behind our exclusion criterion. 
+
+We have also clarified our process for choosing the 125 datasets included the repository in the introduction. ``These are the first 125 participants who finished the entire 3-day protocol, consented to have their data shared, and were not excluded from data sharing for having an incidental finding during neuroradiological review.''
+
+Reviewer \#2 expresses concern over our claim that skullstripping ''is {\em necessary} for calculating brain volume and for improving the quality of other image processing steps,'' and gives as an example the use of SPM's approach to tissue segmentation. Ultimately, this issue relates to where skullstripping enters into a given software package's approach to image preprocessing. This approach can be more or less modular, and skullstripping is occasionally wrapped up with, for example with SPM's unified segmentation, a given software package's approach to registration and segmentation. In any case, we have modified our language throughout the article, replacing claims of necessity with the less definitive claim of usefulness.
+
+We thank the reviewer for pointing out our failure to fully include the NFBS BEaST library in our repository. These data have been uploaded and a link has been added to the project web page.
+
+We appreciate the reviewers pointing out our various typos and missing references, which have been corrected.
+
+
+\end{document}
