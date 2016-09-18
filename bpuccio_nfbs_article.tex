@@ -36,8 +36,14 @@
 \usepackage[utf8]{inputenc} %unicode support
 %\usepackage[applemac]{inputenc} %applemac support if unicode package fails
 %\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
-%\usepackage{notes}
+\usepackage{notes}
 \usepackage{graphicx}
+
+% Footnotes --> Endnotes
+\usepackage{endnotes}
+\let\footnote=\endnote
+\renewcommand{\notesname}{Endnotes}
+\renewcommand*{\theendnote}{\alph{endnote}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                             %%
